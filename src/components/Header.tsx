@@ -73,11 +73,11 @@ const Header: React.FC = () => {
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
             <div className="flex flex-col space-y-6 pt-10 flex-grow">
               {/* Nova Logo dentro do menu mobile */}
-              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-41">
+              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4">
                 <img 
                   src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
-                  className="h-12 w-auto object-contain mx-auto"
+                  className="h-16 w-auto object-contain mx-auto"
                 />
               </a>
               {navItems.map((item) => (
