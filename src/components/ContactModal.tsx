@@ -27,17 +27,26 @@ const clinics: Clinic[] = [
   },
 ];
 
-const ContactModal: React.FC = () => {
+interface ContactModalProps {
+  children?: React.ReactNode;
+}
+
+const ContactModal: React.FC<ContactModalProps> = ({ children }) => {
+  // Se children for fornecido, ele será o trigger. Caso contrário, usamos o botão padrão (desktop).
+  const trigger = children || (
+    <Button 
+      variant="ghost" 
+      // Classes para garantir que o texto seja igual aos links de navegação
+      className="text-lg font-medium text-gray-800 hover:text-ma-salmon transition-colors dark:text-gray-200 dark:hover:text-ma-salmon p-0 h-auto"
+    >
+      Contato
+    </Button>
+  );
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button 
-          variant="ghost" 
-          // Classes para garantir que o texto seja igual aos links de navegação
-          className="text-lg font-medium text-gray-800 hover:text-ma-salmon transition-colors dark:text-gray-200 dark:hover:text-ma-salmon p-0 h-auto"
-        >
-          Contato
-        </Button>
+        {trigger}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] md:max-w-lg p-6 bg-white dark:bg-gray-900 rounded-xl">
         <DialogHeader>
