@@ -62,6 +62,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Cores da Dra. Maria Alice Caldas
+        'ma-green': '#c4cab1',
+        'ma-beige': '#f1cdb7',
+        'ma-salmon': '#f09d86',
       },
       borderRadius: {
         lg: "var(--radius)",
