@@ -3,13 +3,14 @@ import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import ContactModal from './ContactModal'; // Importando o novo modal
 
 const navItems = [
-  { name: 'Início', href: '/#hero' }, // Ajustado para garantir que vá para o topo da home
+  { name: 'Início', href: '/#hero' }, 
   { name: 'Sobre', href: '/#about' }, 
   { name: 'Serviços', href: '/#services' }, 
   { name: 'Consultas', href: '/consultas' }, 
-  { name: 'Contato', href: '/#contact' }, 
+  // O item 'Contato' será substituído pelo componente ContactModal
 ];
 
 interface NavLinkProps {
@@ -54,6 +55,8 @@ const Header: React.FC = () => {
               {item.name}
             </NavLink>
           ))}
+          {/* Substituindo o link Contato pelo Modal */}
+          <ContactModal /> 
           <Button 
             className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors rounded-full"
             asChild
@@ -91,6 +94,11 @@ const Header: React.FC = () => {
                   {item.name}
                 </NavLink>
               ))}
+              {/* Adicionando o ContactModal no menu mobile */}
+              <div className="px-6">
+                <ContactModal />
+              </div>
+              
               <div className="px-6">
                 <Button 
                   className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4 rounded-full"
