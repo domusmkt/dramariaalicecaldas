@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -15,7 +15,7 @@ interface NavLinkProps {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
-  className?: string; // Adicionado className
+  className?: string;
 }
 
 const Header: React.FC = () => {
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       onClick={onClick}
       className={cn(
         "text-lg font-medium text-gray-800 hover:text-ma-salmon transition-colors dark:text-gray-200 dark:hover:text-ma-salmon",
-        className // Aplicando className
+        className
       )}
     >
       {children}
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-sm dark:bg-gray-900/90">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo/Nome */}
+        {/* Logo/Nome - Usando font-serif para o nome */}
         <div className="text-xl font-serif font-bold text-ma-salmon tracking-wider">
           Dra. Maria Alice Caldas
         </div>
@@ -49,7 +49,9 @@ const Header: React.FC = () => {
               {item.name}
             </NavLink>
           ))}
-          <Button className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors">
+          <Button 
+            className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors rounded-full"
+          >
             Agendar Consulta
           </Button>
         </nav>
@@ -74,7 +76,7 @@ const Header: React.FC = () => {
                 </NavLink>
               ))}
               <Button 
-                className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4"
+                className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4 rounded-full"
                 onClick={() => setIsOpen(false)}
               >
                 Agendar Consulta

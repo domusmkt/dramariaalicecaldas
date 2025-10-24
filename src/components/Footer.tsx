@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
+import { Heart, Instagram } from 'lucide-react';
 import { MadeWithDyad } from './made-with-dyad';
 
 const Footer: React.FC = () => {
@@ -13,8 +13,20 @@ const Footer: React.FC = () => {
           Pediatria, Puericultura & Nutrologia Pediátrica. Cuidando do futuro com carinho e ciência.
         </p>
         
+        <div className="flex justify-center items-center space-x-4 mb-4">
+          <a 
+            href="https://www.instagram.com/dramariaalicecaldas/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-ma-salmon transition-colors dark:text-gray-400 dark:hover:text-ma-salmon"
+            aria-label="Instagram da Dra. Maria Alice Caldas"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
+        </div>
+
         <div className="flex justify-center items-center text-gray-500 dark:text-gray-500 text-xs">
-          © {new Date().getFullYear()} Todos os direitos reservados. Desenvolvido com <Heart className="w-3 h-3 mx-1 text-red-500 fill-red-500" />
+          © {new Date().getFullYear()} Dra. Maria Alice Caldas — Todos os direitos reservados. Desenvolvido com <Heart className="w-3 h-3 mx-1 text-red-500 fill-red-500" />
         </div>
       </div>
       <MadeWithDyad />

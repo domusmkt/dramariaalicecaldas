@@ -18,6 +18,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Lato', 'Poppins', 'sans-serif'], // Simulação de fontes de texto
+        serif: ['Playfair Display', 'Cormorant Garamond', 'serif'], // Simulação de fontes de título
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,11 +70,14 @@ export default {
         'ma-green': '#c4cab1',
         'ma-beige': '#f1cdb7',
         'ma-salmon': '#f09d86',
+        'ma-white': '#ffffff',
+        'ma-light-gray': '#f7f7f7',
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        full: "9999px", // Adicionando full para botões arredondados
       },
       keyframes: {
         "accordion-down": {

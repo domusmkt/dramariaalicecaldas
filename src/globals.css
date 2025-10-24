@@ -96,6 +96,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    /* Aplicando uma fonte sans-serif moderna como base (simulando Lato/Poppins) */
+    @apply bg-background text-foreground font-sans; 
+  }
+  
+  /* Aplicando uma fonte serif para títulos (simulando Playfair Display/Cormorant Garamond) */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
   }
 }
