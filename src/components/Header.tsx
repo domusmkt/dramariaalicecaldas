@@ -72,12 +72,12 @@ const Header: React.FC = () => {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
             <div className="flex flex-col space-y-6 pt-10 flex-grow">
-              {/* Nova Logo dentro do menu mobile */}
-              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4">
+              {/* Nova Logo dentro do menu mobile - Removendo mx-auto para alinhar à esquerda */}
+              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4 px-6">
                 <img 
                   src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
-                  className="h-24 w-auto object-contain mx-auto"
+                  className="h-24 w-auto object-contain"
                 />
               </a>
               {navItems.map((item) => (
@@ -85,24 +85,26 @@ const Header: React.FC = () => {
                   key={item.name} 
                   href={item.href} 
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-semibold text-gray-800 dark:text-gray-200"
+                  className="text-2xl font-semibold text-gray-800 dark:text-gray-200 px-6"
                 >
                   {item.name}
                 </NavLink>
               ))}
-              <Button 
-                className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4 rounded-full"
-                onClick={() => setIsOpen(false)}
-                asChild
-              >
-                <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
-                  Agendar Consulta
-                </a>
-              </Button>
+              <div className="px-6">
+                <Button 
+                  className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4 rounded-full"
+                  onClick={() => setIsOpen(false)}
+                  asChild
+                >
+                  <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
+                    Agendar Consulta
+                  </a>
+                </Button>
+              </div>
             </div>
             
             {/* Informações CRM/RQE no final do menu */}
-            <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+            <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700 text-center px-6">
               <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1">Dra. Maria Alice Caldas</p>
               <p className="text-xs text-gray-500 dark:text-gray-400">CRM: 1153188 | RQE: 46414</p>
             </div>
