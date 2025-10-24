@@ -1,28 +1,27 @@
+import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
-import FoodGuideSection from "@/components/FoodGuideSection";
-import FaqSection from "@/components/FaqSection";
-import LocationSection from "@/components/LocationSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import CtaFinalSection from "@/components/CtaFinalSection";
+import HeroNewSection from "@/components/new-index/HeroNewSection";
+import AboutNewSection from "@/components/new-index/AboutNewSection";
+import ServicesPlansSection from "@/components/new-index/ServicesPlansSection";
+import EbookCtaSection from "@/components/new-index/EbookCtaSection";
+import ContactNewSection from "@/components/new-index/ContactNewSection";
+import TestimonialSection from "@/components/TestimonialSection"; // Reutilizando
+import FaqSection from "@/components/FaqSection"; // Reutilizando
 
-const Index = () => {
+const NewIndex: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-grow">
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <FoodGuideSection />
-        <FaqSection />
-        <LocationSection />
-        <TestimonialSection />
-        <CtaFinalSection />
+        <HeroNewSection />
+        <AboutNewSection />
+        <ServicesPlansSection />
+        <EbookCtaSection />
+        <TestimonialSection /> {/* Reutilizando depoimentos */}
+        <FaqSection /> {/* Reutilizando FAQ */}
+        <ContactNewSection />
       </main>
       
       <Footer />
@@ -30,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default NewIndex;
