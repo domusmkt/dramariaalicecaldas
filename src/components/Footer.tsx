@@ -1,6 +1,5 @@
 import React from 'react';
 import { Heart, Instagram } from 'lucide-react';
-import { MadeWithDyad } from './made-with-dyad';
 
 const Footer: React.FC = () => {
   return (
@@ -33,7 +32,6 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} Dra. Maria Alice Caldas — Todos os direitos reservados. Desenvolvido com <Heart className="w-3 h-3 mx-1 text-red-500 fill-red-500" />
         </div>
       </div>
-      <MadeWithDyad />
     </footer>
   );
 };
