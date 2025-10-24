@@ -4,54 +4,59 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-[80vh] flex items-center bg-ma-beige/30 dark:bg-gray-900 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="hero" className="relative overflow-hidden pt-16 pb-12 md:pt-24 md:pb-20 bg-ma-green/10 dark:bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Conteúdo de Texto */}
-          <div className="order-2 md:order-1 text-center md:text-left">
+          <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
-              Primeiros cuidados que constroem uma vida <span className="text-ma-salmon">saudável</span>.
+              Cuidado Pediátrico <span className="text-ma-salmon">Humanizado</span> e <span className="text-ma-salmon">Especializado</span>
             </h1>
-            <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
-              Acompanhamento pediátrico e nutrologia infantil com olhar humano e atualizado.
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              Dra. Maria Alice Caldas — Pediatria, Puericultura & Nutrologia Pediátrica.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-8">
               <Button 
-                size="lg" 
-                className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-bold text-lg px-8 py-6 transition-colors shadow-lg rounded-full"
-                asChild
+                size="lg"
+                className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:scale-[1.02] rounded-full"
+                onClick={() => window.open('https://wa.me/SEUNUMERO', '_blank')}
               >
-                <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
-                  Agendar consulta <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                Agende sua Consulta
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-ma-salmon text-ma-salmon hover:bg-ma-salmon/10 font-bold text-lg px-8 py-6 transition-colors rounded-full"
-                asChild
-              >
-                <a href="#about">
-                  Conheça a Dra.
-                </a>
-              </Button>
+              <a href="#services">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-ma-salmon text-ma-salmon hover:bg-ma-salmon/10 dark:border-ma-salmon dark:text-ma-salmon dark:hover:bg-ma-salmon/20 font-semibold transition-colors rounded-full"
+                >
+                  Saiba Mais
+                </Button>
+              </a>
             </div>
 
-            {/* Selo CRM */}
-            <div className="mt-6 text-sm text-gray-500 dark:text-gray-400 md:text-left text-center">
+            {/* CRM/RQE */}
+            <div className="mt-6 text-sm text-gray-500 dark:text-gray-400 md:text-left text-center space-y-2 sm:space-y-0 sm:space-x-4">
               <span className="inline-block px-3 py-1 bg-ma-green/30 rounded-full font-medium">
-                CRM — Pediatria & Nutrologia Pediátrica
+                CRM: 46414
+              </span>
+              <span className="inline-block px-3 py-1 bg-ma-green/30 rounded-full font-medium">
+                RQE: 46414
               </span>
             </div>
           </div>
 
-          {/* Placeholder da Imagem */}
-          <div className="order-1 md:order-2 flex justify-center">
-            <div className="w-full max-w-md aspect-square bg-ma-green/50 rounded-full shadow-xl flex items-center justify-center border-4 border-ma-green/70 animate-fade-in">
-              <span className="text-gray-700 text-lg font-medium p-4 text-center">
-                [Placeholder: Imagem leve e iluminada (mãe com bebê no colo)]
-              </span>
+          {/* Imagem */}
+          <div className="md:w-1/2 flex justify-center md:justify-end">
+            <div className="relative w-full max-w-md">
+              <img
+                src="/dra-maria-alice-hero.png"
+                alt="Dra. Maria Alice Caldas"
+                className="w-full h-auto object-cover rounded-3xl shadow-2xl"
+              />
+              {/* Efeito de fundo sutil */}
+              <div className="absolute inset-0 bg-ma-salmon/10 rounded-3xl mix-blend-multiply opacity-50"></div>
             </div>
           </div>
         </div>
