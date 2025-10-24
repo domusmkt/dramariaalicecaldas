@@ -37,10 +37,14 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-sm dark:bg-gray-900/90">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo/Nome - Usando font-serif para o nome */}
-        <div className="text-xl font-serif font-bold text-ma-salmon tracking-wider">
-          Dra. Maria Alice Caldas
-        </div>
+        {/* Logo/Nome */}
+        <a href="#hero" className="flex items-center h-full py-2">
+          <img 
+            src="/mariaalicelogosite1.png" 
+            alt="Dra. Maria Alice Caldas - Pediatra" 
+            className="h-12 w-auto object-contain"
+          />
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8 items-center">
@@ -65,6 +69,14 @@ const Header: React.FC = () => {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900">
             <div className="flex flex-col space-y-6 pt-10">
+              {/* Logo dentro do menu mobile para consistência */}
+              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4">
+                <img 
+                  src="/mariaalicelogosite1.png" 
+                  alt="Dra. Maria Alice Caldas - Pediatra" 
+                  className="h-12 w-auto object-contain mx-auto"
+                />
+              </a>
               {navItems.map((item) => (
                 <NavLink 
                   key={item.name} 
