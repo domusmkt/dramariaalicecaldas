@@ -20,10 +20,12 @@ const HeroSection: React.FC = () => {
               <Button 
                 size="lg"
                 className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:scale-[1.02] rounded-full"
-                onClick={() => window.open('https://wa.me/SEUNUMERO', '_blank')}
+                asChild
               >
-                Agende sua Consulta
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
+                  Agende sua Consulta
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <a href="#services">
                 <Button 
