@@ -29,7 +29,7 @@ const AboutNewSection: React.FC = () => {
               Sou Maria Alice Caldas, médica pediatra com especialização em nutrologia infantil. Minha atuação é baseada em evidência científica, mas também na escuta sensível e no olhar atento ao que cada criança e cada família realmente precisam.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              Acredito na prevenção, no vínculo e na presença. Por isso, desenvolvi um modelo de atendimento que une conhecimento técnico com orientação acessível, respeitando o tempo da infância e a realidade das famílias. Atendo de forma particular em ambiente acolhedor, com foco na formação de uma relação próxima com mães que desejam participar ativamente da saúde dos seus filhos.
+              Acredito na prevenção, no vínculo e na presença. Por isso, desenvolvi um modelo de atendimento que une conhecimento técnico com orientação acessível, respeitando o tempo da infância e a realidade das famílias. Atendo de forma personalizada em ambiente acolhedor, com foco na formação de uma relação próxima com mães que desejam participar ativamente da saúde dos seus filhos.
             </p>
             
             <Button 
