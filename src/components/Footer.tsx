@@ -6,9 +6,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-ma-green/20 border-t py-8 mt-12 dark:bg-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="text-xl font-serif font-bold text-ma-salmon mb-4">
-          Dra. Maria Alice Caldas
-        </div>
+        {/* Substituindo o nome de texto pela nova logo monocromática */}
+        <img 
+          src="/mariaalicelogocorunica.png" 
+          alt="Dra. Maria Alice Caldas - Ícone" 
+          className="h-10 w-auto object-contain mx-auto mb-4"
+        />
+        
         <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
           Pediatria, Puericultura & Nutrologia Pediátrica. Cuidando do futuro com carinho e ciência.
         </p>
