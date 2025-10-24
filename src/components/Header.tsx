@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import ContactModal from './ContactModal'; // Importando o novo modal
-import { DialogTrigger } from '@/components/ui/dialog'; // Mantendo a importação, mas ajustando o uso
 
 const navItems = [
   { name: 'Início', href: '/#hero' }, 
@@ -35,20 +34,6 @@ const Header: React.FC = () => {
     >
       {children}
     </a>
-  );
-
-  // Componente auxiliar para renderizar o ContactModal no mobile com o estilo correto
-  const MobileContactTrigger = () => (
-    <ContactModal>
-      <Button 
-        variant="ghost" 
-        // Estilo para o menu mobile
-        className="text-2xl font-semibold font-serif text-gray-800 dark:text-gray-200 hover:text-ma-salmon transition-colors p-0 h-auto justify-start"
-        onClick={() => setIsOpen(false)} // Fecha o menu ao abrir o modal
-      >
-        Contato
-      </Button>
-    </ContactModal>
   );
 
   return (
