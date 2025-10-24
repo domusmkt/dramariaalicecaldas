@@ -39,9 +39,6 @@ const HeroSection: React.FC = () => {
             {/* CRM/RQE */}
             <div className="mt-6 text-sm text-gray-500 dark:text-gray-400 md:text-left text-center space-y-2 sm:space-y-0 sm:space-x-4">
               <span className="inline-block px-3 py-1 bg-ma-green/30 rounded-full font-medium">
-                CRM: 46414
-              </span>
-              <span className="inline-block px-3 py-1 bg-ma-green/30 rounded-full font-medium">
                 RQE: 46414
               </span>
             </div>
