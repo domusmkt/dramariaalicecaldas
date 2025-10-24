@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
             <div className="flex flex-col space-y-6 pt-10 flex-grow">
               {/* Nova Logo dentro do menu mobile */}
-              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-1">
+              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-41">
                 <img 
                   src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
