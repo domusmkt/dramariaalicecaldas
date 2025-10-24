@@ -7,8 +7,22 @@ const HeroSection: React.FC = () => {
     <section id="hero" className="relative overflow-hidden pt-16 pb-12 md:pt-24 md:pb-20 bg-ma-green/10 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          {/* Conteúdo de Texto */}
-          <div className="md:w-1/2 text-center md:text-left">
+          
+          {/* Imagem (Ordem 1 no mobile, Ordem 2 no desktop) */}
+          <div className="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
+            <div className="relative w-full max-w-md">
+              <img
+                src="/dra-maria-alice-hero.png"
+                alt="Dra. Maria Alice Caldas"
+                className="w-full h-auto object-cover rounded-3xl shadow-2xl"
+              />
+              {/* Efeito de fundo sutil */}
+              <div className="absolute inset-0 bg-ma-salmon/10 rounded-3xl mix-blend-multiply opacity-50"></div>
+            </div>
+          </div>
+
+          {/* Conteúdo de Texto (Ordem 2 no mobile, Ordem 1 no desktop) */}
+          <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
               Cuidado Pediátrico <span className="text-ma-salmon">Humanizado</span> e <span className="text-ma-salmon">Especializado</span>
             </h1>
@@ -43,19 +57,6 @@ const HeroSection: React.FC = () => {
               <span className="inline-block px-3 py-1 bg-ma-green/30 rounded-full font-medium">
                 CRM: 1153188 | RQE: 46414
               </span>
-            </div>
-          </div>
-
-          {/* Imagem */}
-          <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-md">
-              <img
-                src="/dra-maria-alice-hero.png"
-                alt="Dra. Maria Alice Caldas"
-                className="w-full h-auto object-cover rounded-3xl shadow-2xl"
-              />
-              {/* Efeito de fundo sutil */}
-              <div className="absolute inset-0 bg-ma-salmon/10 rounded-3xl mix-blend-multiply opacity-50"></div>
             </div>
           </div>
         </div>
