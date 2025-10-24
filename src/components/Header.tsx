@@ -72,7 +72,7 @@ const Header: React.FC = () => {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
             <div className="flex flex-col space-y-6 pt-10 flex-grow">
-              {/* Nova Logo dentro do menu mobile - Removendo mx-auto para alinhar à esquerda */}
+              {/* Nova Logo dentro do menu mobile */}
               <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4 px-6">
                 <img 
                   src="/logomobile-menu.png" 
@@ -85,7 +85,8 @@ const Header: React.FC = () => {
                   key={item.name} 
                   href={item.href} 
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-semibold text-gray-800 dark:text-gray-200 px-6"
+                  // Adicionando font-serif aqui
+                  className="text-2xl font-semibold font-serif text-gray-800 dark:text-gray-200 px-6"
                 >
                   {item.name}
                 </NavLink>
