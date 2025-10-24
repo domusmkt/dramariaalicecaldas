@@ -5,11 +5,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'Início', href: '#hero' },
-  { name: 'Sobre', href: '#about' },
-  { name: 'Serviços', href: '#services' },
-  { name: 'Consultas', href: '/consultas' }, // Novo item de menu
-  { name: 'Contato', href: '#contact' },
+  { name: 'Início', href: '/' }, // Alterado para '/'
+  { name: 'Sobre', href: '/#about' }, // Usando /# para garantir que a âncora funcione a partir de outras páginas
+  { name: 'Serviços', href: '/#services' }, // Usando /# para garantir que a âncora funcione a partir de outras páginas
+  { name: 'Consultas', href: '/consultas' }, 
+  { name: 'Contato', href: '/#contact' }, // Usando /# para garantir que a âncora funcione a partir de outras páginas
 ];
 
 interface NavLinkProps {
@@ -38,8 +38,8 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-sm dark:bg-gray-900/90">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo/Nome Desktop */}
-        <a href="#hero" className="flex items-center h-full py-2">
+        {/* Logo/Nome Desktop - Alterado para '/' */}
+        <a href="/" className="flex items-center h-full py-2">
           <img 
             src="/mariaalicelogocorunica.png" 
             alt="Dra. Maria Alice Caldas - Pediatra" 
@@ -73,8 +73,8 @@ const Header: React.FC = () => {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
             <div className="flex flex-col space-y-6 pt-10 flex-grow">
-              {/* Nova Logo dentro do menu mobile */}
-              <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4 px-6">
+              {/* Nova Logo dentro do menu mobile - Alterado para '/' */}
+              <a href="/" onClick={() => setIsOpen(false)} className="mb-4 px-6">
                 <img 
                   src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
