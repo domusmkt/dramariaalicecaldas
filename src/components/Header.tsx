@@ -8,6 +8,7 @@ const navItems = [
   { name: 'Início', href: '#hero' },
   { name: 'Sobre', href: '#about' },
   { name: 'Serviços', href: '#services' },
+  { name: 'Consultas', href: '/consultas' }, // Novo item de menu
   { name: 'Contato', href: '#contact' },
 ];
 
@@ -85,7 +86,6 @@ const Header: React.FC = () => {
                   key={item.name} 
                   href={item.href} 
                   onClick={() => setIsOpen(false)}
-                  // Adicionando font-serif aqui
                   className="text-2xl font-semibold font-serif text-gray-800 dark:text-gray-200 px-6"
                 >
                   {item.name}
