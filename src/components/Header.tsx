@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-sm dark:bg-gray-900/90">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo/Nome */}
+        {/* Logo/Nome Desktop */}
         <a href="#hero" className="flex items-center h-full py-2">
           <img 
             src="/mariaalicelogocorunica.png" 
@@ -55,8 +55,11 @@ const Header: React.FC = () => {
           ))}
           <Button 
             className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors rounded-full"
+            asChild
           >
-            Agendar Consulta
+            <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
+              Agendar Consulta
+            </a>
           </Button>
         </nav>
 
@@ -67,12 +70,12 @@ const Header: React.FC = () => {
               <Menu className="h-6 w-6 text-gray-800 dark:text-gray-200" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900">
-            <div className="flex flex-col space-y-6 pt-10">
-              {/* Logo dentro do menu mobile para consistência */}
+          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white dark:bg-gray-900 flex flex-col">
+            <div className="flex flex-col space-y-6 pt-10 flex-grow">
+              {/* Nova Logo dentro do menu mobile */}
               <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4">
                 <img 
-                  src="/mariaalicelogocorunica.png" 
+                  src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
                   className="h-12 w-auto object-contain mx-auto"
                 />
@@ -90,9 +93,18 @@ const Header: React.FC = () => {
               <Button 
                 className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold transition-colors mt-4 rounded-full"
                 onClick={() => setIsOpen(false)}
+                asChild
               >
-                Agendar Consulta
+                <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
+                  Agendar Consulta
+                </a>
               </Button>
+            </div>
+            
+            {/* Informações CRM/RQE no final do menu */}
+            <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+              <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1">Dra. Maria Alice Caldas</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">CRM: 1153188 | RQE: 46414</p>
             </div>
           </SheetContent>
         </Sheet>
