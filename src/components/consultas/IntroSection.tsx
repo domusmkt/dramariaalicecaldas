@@ -11,9 +11,15 @@ const IntroSection: React.FC = () => {
           Cada encontro é um momento de escuta, orientação e cuidado — sempre com foco na saúde e bem-estar do seu filho.
         </p>
         
-        {/* Placeholder da Imagem */}
-        <div className="w-full h-64 bg-ma-salmon/30 rounded-xl mx-auto flex items-center justify-center text-gray-700 italic text-sm shadow-lg">
-          [Imagem sugerida: mãe conversando com pediatra no consultório]
+        {/* Imagem da Consulta */}
+        <div className="w-full relative overflow-hidden rounded-xl mx-auto shadow-2xl border-4 border-ma-salmon/50">
+          <img
+            src="/consulta1.png"
+            alt="Dra. Maria Alice Caldas em consulta com uma criança"
+            className="w-full h-auto object-cover"
+          />
+          {/* Efeito de fundo sutil para harmonizar com o tema */}
+          <div className="absolute inset-0 bg-ma-beige/10 mix-blend-multiply opacity-50"></div>
         </div>
       </div>
     </section>
