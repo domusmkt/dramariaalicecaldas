@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         {/* Logo/Nome */}
         <a href="#hero" className="flex items-center h-full py-2">
           <img 
-            src="/mariaalicelogosite1.png" 
+            src="/mariaalicelogocorunica.png" 
             alt="Dra. Maria Alice Caldas - Pediatra" 
             className="h-12 w-auto object-contain"
           />
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               {/* Logo dentro do menu mobile para consistência */}
               <a href="#hero" onClick={() => setIsOpen(false)} className="mb-4">
                 <img 
-                  src="/mariaalicelogosite1.png" 
+                  src="/mariaalicelogocorunica.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
                   className="h-12 w-auto object-contain mx-auto"
                 />
