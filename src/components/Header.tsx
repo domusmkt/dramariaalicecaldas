@@ -96,11 +96,10 @@ const Header: React.FC = () => {
               ))}
               {/* Adicionando o ContactModal no menu mobile com estilo de link grande */}
               <div className="px-6">
-                {/* Renderizando o ContactModal diretamente. O ContactModal precisa ser ajustado para aceitar children. */}
                 <ContactModal>
                   <Button 
                     variant="ghost" 
-                    onClick={() => setIsOpen(false)} // Fecha o menu ao abrir o modal
+                    // REMOVIDO: onClick={() => setIsOpen(false)}
                     className="text-2xl font-semibold font-serif text-gray-800 dark:text-gray-200 hover:text-ma-salmon transition-colors p-0 h-auto justify-start"
                   >
                     Contato
