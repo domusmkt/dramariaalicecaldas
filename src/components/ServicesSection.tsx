@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Baby, Apple, Utensils } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Importando Link
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -52,9 +53,10 @@ const ServicesSection: React.FC = () => {
           className="border-2 border-ma-salmon text-ma-salmon hover:bg-ma-salmon/10 font-bold px-8 py-6 transition-colors rounded-full"
           asChild
         >
-          <a href="#contact">
+          {/* Usando Link do React Router para navegação interna */}
+          <Link to="/consultas">
             Saiba mais sobre as consultas
-          </a>
+          </Link>
         </Button>
       </div>
     </section>
