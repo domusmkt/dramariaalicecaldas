@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import ContactModal from './ContactModal'; // Importando o novo modal
+import { DialogTrigger } from '@/components/ui/dialog';
 
 const navItems = [
   { name: 'Início', href: '/#hero' }, 
@@ -94,9 +95,17 @@ const Header: React.FC = () => {
                   {item.name}
                 </NavLink>
               ))}
-              {/* Adicionando o ContactModal no menu mobile */}
+              {/* Adicionando o ContactModal no menu mobile com estilo de link grande */}
               <div className="px-6">
-                <ContactModal />
+                <DialogTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    onClick={() => setIsOpen(false)} // Fecha o menu ao abrir o modal
+                    className="text-2xl font-semibold font-serif text-gray-800 dark:text-gray-200 hover:text-ma-salmon transition-colors p-0 h-auto justify-start"
+                  >
+                    Contato
+                  </Button>
+                </DialogTrigger>
               </div>
               
               <div className="px-6">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { MapPin, Phone, Instagram, Mail, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Instagram, ArrowRight } from 'lucide-react';
 
 interface Clinic {
   name: string;
@@ -33,6 +33,7 @@ const ContactModal: React.FC = () => {
       <DialogTrigger asChild>
         <Button 
           variant="ghost" 
+          // Classes para garantir que o texto seja igual aos links de navegação
           className="text-lg font-medium text-gray-800 hover:text-ma-salmon transition-colors dark:text-gray-200 dark:hover:text-ma-salmon p-0 h-auto"
         >
           Contato
@@ -46,17 +47,6 @@ const ContactModal: React.FC = () => {
         </DialogHeader>
         
         <div className="space-y-6 mt-4">
-          {/* Contato Geral */}
-          <div className="p-4 bg-ma-green/10 rounded-lg dark:bg-gray-800">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-              Agendamento e Dúvidas
-            </h3>
-            <div className="flex items-center space-x-3 text-gray-700 dark:text-gray-300">
-              <Mail className="w-5 h-5 text-ma-salmon" />
-              <p>dramariaalicecaldas@gmail.com</p>
-            </div>
-          </div>
-
           {/* Locais de Atendimento */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white font-serif">
