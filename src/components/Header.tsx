@@ -77,7 +77,7 @@ const Header: React.FC = () => {
                 <img 
                   src="/logomobile-menu.png" 
                   alt="Dra. Maria Alice Caldas - Pediatra" 
-                  className="h-20 w-auto object-contain mx-auto"
+                  className="h-24 w-auto object-contain mx-auto"
                 />
               </a>
               {navItems.map((item) => (
