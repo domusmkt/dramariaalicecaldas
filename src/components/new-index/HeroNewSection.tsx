@@ -16,7 +16,7 @@ const HeroNewSection = () => {
           className="w-full h-full object-cover"
         />
         {/* Overlay escuro para melhorar a leitura do texto sobreposto */}
-        <div className="absolute inset-0 bg-gray-900/50"></div> {/* Aumentando a opacidade do overlay */}
+        <div className="absolute inset-0 bg-gray-900/50"></div>
       </div>
 
       <div className="container mx-auto px-4">
@@ -30,21 +30,21 @@ const HeroNewSection = () => {
                         flex flex-col items-center text-center 
                         bg-gradient-to-t from-gray-950/80 to-transparent lg:bg-none"> 
             
-            {/* Subtítulo (Simulando "A SUA MELHOR VERSÃO") */}
-            <p className={cn(
-              "text-sm uppercase tracking-widest mb-2",
-              "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300"
-            )}>
-              Cuidado completo e personalizado
-            </p>
-
-            {/* Título Principal (Simulando "COMEÇA AGORA") */}
+            {/* Título Principal (HEAD) */}
             <h1 className={cn(
-              "text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-8 font-serif",
+              "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif max-w-2xl",
               "text-white lg:text-gray-900 dark:lg:text-white"
             )}>
-              Pediatria e Nutrologia Infantil
+              Eu cuido do seu filho de forma contínua, com olhar atento ao desenvolvimento, à nutrição e ao bem-estar emocional da infância.
             </h1>
+            
+            {/* Subhead / Descrição */}
+            <p className={cn(
+              "text-base md:text-lg mb-8 max-w-xl",
+              "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300"
+            )}>
+              Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado — com foco no desenvolvimento físico, emocional e nutricional da criança, em cada fase da infância. Cada atendimento é pensado especialmente para mães que buscam clareza, orientação atualizada, escuta ativa e a construção de um vínculo de confiança.
+            </p>
             
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 w-full max-w-sm">
