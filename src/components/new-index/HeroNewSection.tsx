@@ -25,18 +25,18 @@ const HeroNewSection = () => {
         {/* Conteúdo de Texto (Centralizado) */}
         <div className="flex flex-col items-center text-center"> 
           
-          {/* Título Principal (HEAD) - Reduzindo o tamanho no mobile (text-3xl) */}
+          {/* Título Principal (HEAD) - Com destaque nas palavras-chave */}
           <h1 className={cn(
             "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif text-gray-900 dark:text-white"
           )}>
-            Eu cuido do seu filho de forma contínua, com olhar atento ao desenvolvimento, à nutrição e ao bem-estar emocional da infância.
+            Eu cuido do seu filho de forma contínua, com olhar atento ao <span className="text-ma-salmon">desenvolvimento</span>, à <span className="text-ma-salmon">nutrição</span> e ao bem-estar emocional da infância.
           </h1>
           
-          {/* Subhead / Descrição - Reduzindo o tamanho no mobile (text-base) */}
+          {/* Subhead / Descrição - Texto atualizado conforme a imagem */}
           <p className={cn(
             "text-base md:text-xl mb-10 text-gray-700 dark:text-gray-300 max-w-3xl"
           )}>
-            Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado.
+            Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado — com foco no desenvolvimento físico, emocional e nutricional da criança, em cada fase da infância. Cada atendimento é pensado especialmente para mães que buscam clareza, orientação atualizada, escuta ativa e a construção de um vínculo de confiança.
           </p>
           
           {/* CTAs */}
