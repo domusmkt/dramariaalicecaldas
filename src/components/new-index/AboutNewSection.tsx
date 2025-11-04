@@ -6,11 +6,12 @@ const AboutNewSection: React.FC = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* Reduzindo o gap de 12 para 8 no desktop */}
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           
-          {/* Imagem (Reutilizando a imagem existente) */}
+          {/* Imagem (Aumentando o tamanho máximo para max-w-sm) */}
           <div className="flex justify-center md:justify-start order-1 md:order-1">
-            <div className="w-full max-w-xs aspect-square relative overflow-hidden rounded-3xl shadow-2xl border-4 border-ma-beige/90">
+            <div className="w-full max-w-sm aspect-square relative overflow-hidden rounded-3xl shadow-2xl border-4 border-ma-beige/90">
               <img
                 src="/mariaaliceabout.png"
                 alt="Retrato profissional da Dra. Maria Alice Caldas"
