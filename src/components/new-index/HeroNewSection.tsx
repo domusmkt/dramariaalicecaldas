@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 const HeroNewSection = () => {
   return (
-    // Reduzindo o padding superior para pt-16 (mobile) e pt-20 (sm) e usando bg-ma-light-gray
-    <section id="hero" className="relative overflow-hidden pt-16 pb-16 sm:pt-20 sm:pb-24 bg-ma-light-gray dark:bg-gray-800">
+    // Aumentando o padding superior para pt-24 (mobile) e pt-32 (sm/desktop) e pb-32
+    <section id="hero" className="relative overflow-hidden pt-24 pb-24 sm:pt-32 sm:pb-32 bg-ma-light-gray dark:bg-gray-800">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         
