@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 const HeroNewSection = () => {
   return (
-    // Aumentando o padding superior para compensar o header fixo e dar espaço
-    <section id="hero" className="relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-24 bg-white dark:bg-gray-800">
+    // Reduzindo o padding superior para pt-16 (mobile) e pt-20 (sm) e usando bg-ma-light-gray
+    <section id="hero" className="relative overflow-hidden pt-16 pb-16 sm:pt-20 sm:pb-24 bg-ma-light-gray dark:bg-gray-800">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         
