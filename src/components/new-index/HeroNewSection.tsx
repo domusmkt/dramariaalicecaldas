@@ -26,7 +26,7 @@ const HeroNewSection = () => {
           <div className="order-2 lg:order-1 pt-8 md:pt-0 lg:relative lg:py-32 z-10 
                         
                         // Mobile: Posicionamento absoluto, centralizado e ajustado
-                        absolute bottom-0 left-0 right-0 p-4 pb-12 sm:p-8 sm:pb-16 
+                        absolute bottom-10 left-0 right-0 p-4 sm:p-8 
                         flex flex-col items-center text-center 
                         bg-gradient-to-t from-gray-950/80 to-transparent lg:bg-none"> 
             
