@@ -31,13 +31,13 @@ const HeroNewSection = () => {
             
             <h1 className={cn(
               "text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 font-serif",
-              "text-gray-900 lg:text-gray-900 dark:text-white" // Cor padrão no desktop
+              "text-white lg:text-gray-900 dark:lg:text-white" // Branco no mobile, volta para gray-900 no desktop (light mode)
             )}>
               Pediatria e Nutrologia Infantil
             </h1>
             <p className={cn(
               "text-xl md:text-2xl mb-6 max-w-xl",
-              "text-gray-700 lg:text-gray-700 dark:text-gray-300" // Cor padrão no desktop
+              "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300" // Cinza claro no mobile, volta para gray-700 no desktop (light mode)
             )}>
               Cuidado completo e personalizado para o desenvolvimento saudável do
               seu filho, desde o nascimento até a adolescência.
