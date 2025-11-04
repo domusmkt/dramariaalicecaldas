@@ -42,7 +42,8 @@ const HeroNewSection = () => {
               <Button
                 asChild
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white/20 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
+                // Alterando para usar ma-green como cor principal para contraste
+                className="border-2 border-ma-green text-ma-green bg-white hover:bg-ma-green/10 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
               >
                 <Link to="/consultas">
                   Saiba mais sobre as consultas
