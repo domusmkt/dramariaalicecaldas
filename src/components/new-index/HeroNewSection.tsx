@@ -28,7 +28,10 @@ const HeroNewSection = () => {
                         // Mobile: Posicionamento absoluto, centralizado e ajustado
                         absolute bottom-10 left-0 right-0 p-4 sm:p-8 
                         flex flex-col items-center text-center 
-                        bg-gradient-to-t from-gray-950/80 to-transparent lg:bg-none"> 
+                        bg-gradient-to-t from-gray-950/80 to-transparent lg:bg-none
+                        
+                        // Desktop: Alinhamento à esquerda
+                        lg:items-start lg:text-left"> 
             
             {/* Título Principal (HEAD) */}
             <h1 className={cn(
@@ -47,10 +50,10 @@ const HeroNewSection = () => {
             </p>
             
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-sm">
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-sm lg:max-w-none lg:w-auto">
               <Button
                 asChild
-                className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg shadow-ma-salmon/30"
+                className="w-full sm:w-auto bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg shadow-ma-salmon/30"
               >
                 <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
                   Agende sua consulta
@@ -60,7 +63,7 @@ const HeroNewSection = () => {
               <Button
                 asChild
                 variant="outline"
-                className="w-full border-2 border-ma-green text-ma-green bg-white hover:bg-ma-green/10 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
+                className="w-full sm:w-auto border-2 border-ma-green text-ma-green bg-white hover:bg-ma-green/10 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
               >
                 <Link to="/consultas">
                   Saiba mais
