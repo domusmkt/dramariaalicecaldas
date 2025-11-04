@@ -35,7 +35,7 @@ const HeroNewSection = () => {
             
             {/* Título Principal (HEAD) */}
             <h1 className={cn(
-              "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif max-w-2xl",
+              "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif", // Removido max-w-2xl
               "text-white lg:text-gray-900 dark:lg:text-white"
             )}>
               Eu cuido do seu filho de forma contínua, com olhar atento ao desenvolvimento, à nutrição e ao bem-estar emocional da infância.
@@ -43,7 +43,7 @@ const HeroNewSection = () => {
             
             {/* Subhead / Descrição */}
             <p className={cn(
-              "text-base md:text-lg mb-8 max-w-xl",
+              "text-base md:text-lg mb-8", // Removido max-w-xl
               "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300"
             )}>
               Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado — com foco no desenvolvimento físico, emocional e nutricional da criança, em cada fase da infância. Cada atendimento é pensado especialmente para mães que buscam clareza, orientação atualizada, escuta ativa e a construção de um vínculo de confiança.
