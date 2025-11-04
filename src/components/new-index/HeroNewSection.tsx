@@ -23,12 +23,12 @@ const HeroNewSection = () => {
           </div>
 
           {/* Content Column (Below Image on Mobile, Left on Desktop) */}
-          {/* No mobile, o conteúdo vem depois (order-2). Adicionando padding superior para compensar o Header fixo no mobile. */}
-          <div className="order-2 lg:order-1 pt-16 md:pt-0"> 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6 font-serif">
+          {/* Reduzindo pt-16 para pt-8 no mobile para aproximar o conteúdo da imagem. */}
+          <div className="order-2 lg:order-1 pt-8 md:pt-0"> 
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-4 font-serif">
               Pediatria e Nutrologia Infantil
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-6 max-w-xl">
               Cuidado completo e personalizado para o desenvolvimento saudável do
               seu filho, desde o nascimento até a adolescência.
             </p>
