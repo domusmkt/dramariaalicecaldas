@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const HeroNewSection = () => {
   return (
     // A seção ocupa a altura total da tela no mobile, mas volta ao padrão no lg:
-    <section id="hero" className="relative overflow-hidden min-h-[80vh] lg:min-h-0 pt-16 lg:pt-0">
+    <section id="hero" className="relative overflow-hidden min-h-screen lg:min-h-0 pt-16 lg:pt-0">
       
       {/* Imagem de Fundo (Mobile Fullscreen) */}
       <div className="absolute inset-0 lg:hidden">
@@ -16,7 +16,7 @@ const HeroNewSection = () => {
           className="w-full h-full object-cover"
         />
         {/* Overlay escuro para melhorar a leitura do texto sobreposto */}
-        <div className="absolute inset-0 bg-gray-900/40"></div>
+        <div className="absolute inset-0 bg-gray-900/50"></div> {/* Aumentando a opacidade do overlay */}
       </div>
 
       <div className="container mx-auto px-4">
@@ -25,27 +25,32 @@ const HeroNewSection = () => {
           {/* Content Column (Mobile: Absolute Bottom, Desktop: Left) */}
           <div className="order-2 lg:order-1 pt-8 md:pt-0 lg:relative lg:py-32 z-10 
                         
-                        // Mobile: Posicionamento absoluto no fundo
+                        // Mobile: Posicionamento absoluto, centralizado e ajustado
                         absolute bottom-0 left-0 right-0 p-4 pb-12 sm:p-8 sm:pb-16 
-                        bg-gradient-to-t from-white/90 dark:from-gray-950/90 to-transparent lg:bg-none"> 
+                        flex flex-col items-center text-center 
+                        bg-gradient-to-t from-gray-950/80 to-transparent lg:bg-none"> 
             
+            {/* Subtítulo (Simulando "A SUA MELHOR VERSÃO") */}
+            <p className={cn(
+              "text-sm uppercase tracking-widest mb-2",
+              "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300"
+            )}>
+              Cuidado completo e personalizado
+            </p>
+
+            {/* Título Principal (Simulando "COMEÇA AGORA") */}
             <h1 className={cn(
-              "text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 font-serif",
-              "text-white lg:text-gray-900 dark:lg:text-white" // Branco no mobile, volta para gray-900 no desktop (light mode)
+              "text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-8 font-serif",
+              "text-white lg:text-gray-900 dark:lg:text-white"
             )}>
               Pediatria e Nutrologia Infantil
             </h1>
-            <p className={cn(
-              "text-xl md:text-2xl mb-6 max-w-xl",
-              "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300" // Cinza claro no mobile, volta para gray-700 no desktop (light mode)
-            )}>
-              Cuidado completo e personalizado para o desenvolvimento saudável do
-              seu filho, desde o nascimento até a adolescência.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-sm">
               <Button
                 asChild
-                className="bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg shadow-ma-salmon/30"
+                className="w-full bg-ma-salmon hover:bg-ma-salmon/90 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg shadow-ma-salmon/30"
               >
                 <a href="https://wa.me/5522997972358" target="_blank" rel="noopener noreferrer">
                   Agende sua consulta
@@ -55,10 +60,10 @@ const HeroNewSection = () => {
               <Button
                 asChild
                 variant="outline"
-                className="border-2 border-ma-green text-ma-green bg-white hover:bg-ma-green/10 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
+                className="w-full border-2 border-ma-green text-ma-green bg-white hover:bg-ma-green/10 font-semibold py-3 px-8 rounded-full text-lg transition duration-300"
               >
                 <Link to="/consultas">
-                  Saiba mais sobre as consultas
+                  Saiba mais
                 </Link>
               </Button>
             </div>
