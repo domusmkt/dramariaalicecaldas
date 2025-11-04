@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 
 const HeroNewSection = () => {
   return (
-    // Removendo min-h-screen e pt-16/lg:pt-0 para usar padding padrão e compensar o header fixo
-    <section id="hero" className="relative overflow-hidden pt-24 pb-16 sm:pt-32 sm:pb-24 bg-ma-beige/70 dark:bg-gray-800">
+    // Fundo branco no mobile e desktop. Reduzindo o padding superior para subir a imagem.
+    <section id="hero" className="relative overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-24 bg-white dark:bg-gray-800">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
         
         {/* Imagem no Topo (Centralizada) */}
-        <div className="flex justify-center mb-10">
-          <div className="relative w-full max-w-md aspect-square overflow-hidden rounded-3xl shadow-2xl border-4 border-ma-salmon/50">
+        <div className="flex justify-center mb-8 sm:mb-10">
+          <div className="relative w-full max-w-xs sm:max-w-md aspect-square overflow-hidden rounded-3xl shadow-2xl border-4 border-ma-salmon/50">
             <img
               src="/dramariaalicecaldas.png"
               alt="Dra. Maria Alice Caldas atendendo uma criança"
@@ -25,16 +25,16 @@ const HeroNewSection = () => {
         {/* Conteúdo de Texto (Centralizado) */}
         <div className="flex flex-col items-center text-center"> 
           
-          {/* Título Principal (HEAD) */}
+          {/* Título Principal (HEAD) - Reduzindo o tamanho no mobile (text-3xl) */}
           <h1 className={cn(
-            "text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif text-gray-900 dark:text-white"
+            "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif text-gray-900 dark:text-white"
           )}>
             Eu cuido do seu filho de forma contínua, com olhar atento ao desenvolvimento, à nutrição e ao bem-estar emocional da infância.
           </h1>
           
-          {/* Subhead / Descrição */}
+          {/* Subhead / Descrição - Reduzindo o tamanho no mobile (text-base) */}
           <p className={cn(
-            "text-lg md:text-xl mb-10 text-gray-700 dark:text-gray-300 max-w-3xl"
+            "text-base md:text-xl mb-10 text-gray-700 dark:text-gray-300 max-w-3xl"
           )}>
             Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado.
           </p>
