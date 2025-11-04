@@ -20,7 +20,8 @@ const HeroNewSection = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        {/* Alterado max-w-6xl para max-w-7xl */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           
           {/* Content Column (Mobile: Absolute Bottom, Desktop: Left) */}
           <div className="order-2 lg:order-1 pt-8 md:pt-0 lg:relative lg:py-32 z-10 
@@ -35,7 +36,7 @@ const HeroNewSection = () => {
             
             {/* Título Principal (HEAD) */}
             <h1 className={cn(
-              "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif", // Removido max-w-2xl
+              "text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-4 font-serif",
               "text-white lg:text-gray-900 dark:lg:text-white"
             )}>
               Eu cuido do seu filho de forma contínua, com olhar atento ao desenvolvimento, à nutrição e ao bem-estar emocional da infância.
@@ -43,7 +44,7 @@ const HeroNewSection = () => {
             
             {/* Subhead / Descrição */}
             <p className={cn(
-              "text-base md:text-lg mb-8", // Removido max-w-xl
+              "text-base md:text-lg mb-8",
               "text-gray-200 lg:text-gray-700 dark:lg:text-gray-300"
             )}>
               Como médica pediatra e especialista em nutrologia infantil, acredito em um cuidado que vai além da consulta pontual. O que ofereço é um acompanhamento contínuo e individualizado — com foco no desenvolvimento físico, emocional e nutricional da criança, em cada fase da infância. Cada atendimento é pensado especialmente para mães que buscam clareza, orientação atualizada, escuta ativa e a construção de um vínculo de confiança.
