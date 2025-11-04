@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 const HeroNewSection = () => {
   return (
-    // Aumentando o padding superior para pt-24 (mobile) e pt-40 (sm/desktop) e pb-40
-    <section id="hero" className="relative overflow-hidden pt-24 pb-24 sm:pt-40 sm:pb-40 bg-ma-light-gray dark:bg-gray-800">
+    // Aumentando o padding superior para pt-24 (mobile) e pt-48 (sm/desktop) e pb-48
+    <section id="hero" className="relative overflow-hidden pt-24 pb-24 sm:pt-48 sm:pb-48 bg-ma-light-gray dark:bg-gray-800">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         
