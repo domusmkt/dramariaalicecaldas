@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 
 const HeroNewSection = () => {
   return (
-    // Fundo branco no mobile e desktop. Reduzindo o padding superior para subir a imagem.
-    <section id="hero" className="relative overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-24 bg-white dark:bg-gray-800">
+    // Reduzindo o padding superior para pt-16 (mobile) e pt-20 (sm)
+    <section id="hero" className="relative overflow-hidden pt-16 pb-16 sm:pt-20 sm:pb-24 bg-white dark:bg-gray-800">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
         
-        {/* Imagem no Topo (Centralizada) */}
-        <div className="flex justify-center mb-8 sm:mb-10">
+        {/* Imagem no Topo (Centralizada) - Reduzindo o margin-bottom para mb-6 */}
+        <div className="flex justify-center mb-6 sm:mb-8">
           <div className="relative w-full max-w-xs sm:max-w-md aspect-square overflow-hidden rounded-3xl shadow-2xl border-4 border-ma-salmon/50">
             <img
               src="/dramariaalicecaldas.png"
