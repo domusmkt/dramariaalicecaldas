@@ -37,7 +37,8 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/90 backdrop-blur-sm dark:bg-gray-900/90">
+    // Alterado de sticky para fixed, e ajustado o fundo para ser mais transparente/claro
+    <header className="fixed top-0 z-50 w-full border-b border-transparent bg-white/80 backdrop-blur-sm dark:bg-gray-900/80 transition-colors duration-300">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo/Nome Desktop - Redireciona para a home */}
         <a href="/" className="flex items-center h-full py-2">

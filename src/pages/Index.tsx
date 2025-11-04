@@ -14,7 +14,8 @@ const NewIndex: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-grow">
+      {/* Adicionando padding superior para compensar o Header fixo, exceto no Hero que já foi ajustado internamente */}
+      <main className="flex-grow pt-16 lg:pt-0"> 
         <HeroNewSection />
         <AboutNewSection />
         <ServicesPlansSection />
